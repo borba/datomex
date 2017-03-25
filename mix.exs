@@ -37,7 +37,7 @@ defmodule Datomex.Mixfile do
     [
         {:exdn, "~> 2.1"},
         {:httpoison, "~> 0.11.1"},
-        {:poison, "~> 3.1"},
+        {:poison, "~> 2.0"},
         {:ex_doc, "~> 0.15.0"}
     ]
   end
