@@ -52,7 +52,7 @@ defmodule DatomexTest do
   end
 
   test "makes transactions" do
-     {:ok, %HTTPoison.Response{ body: body }} = Datomex.transact movies
+     {:ok, %HTTPoison.Response{ body: body }} = Datomex.transact movies()
      tx = Exdn.to_elixir!(body)
      assert Map.has_key? tx, :"db-after"
   end

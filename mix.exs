@@ -5,7 +5,7 @@ defmodule Datomex.Mixfile do
     [app: :datomex,
      version: "0.0.6",
      elixir: "~> 1.2",
-     deps: deps,
+     deps: deps(),
      package: [
        contributors: ["Eric West"],
        licenses: ["MIT"],
@@ -35,10 +35,10 @@ defmodule Datomex.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
-        {:exdn, "~> 2.1.1"},
-        {:httpoison, "~> 0.8.0"},
-        {:poison, "~> 1.5"},
-        {:ex_doc, "~> 0.6.1"}
+        {:exdn, "~> 2.1"},
+        {:httpoison, "~> 0.11.1"},
+        {:poison, "~> 3.1"},
+        {:ex_doc, "~> 0.15.0"}
     ]
   end
 end
